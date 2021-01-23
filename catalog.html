@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Нёрдс</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="index.html">
+            <img src="#" width="160" height="66" alt="Логотип Нердс">
+          </a>
+          <ul>
+            <li><a href="blank.html">Студия</a></li>
+            <li><a href="blank.html">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="blank.html">Контакты</a></li>
+          </ul>
+          <a href="blank.html">Корзина</a>
+        </nav>
+      </header> 
+          <h1>Магазин Готовых Шаблонов</h1>
+   <section>
+     <h2>Фильтр товаров</h2>  
+     <form action="https://echo.htmlacademy.ru/">   
+     <fieldset>
+         <legend>Стоимость:</legend>
+            <div >
+             <input type="range" id="cost"
+              min="0" max="15000" value="10000"><br>
+            </div>
+              <label for="mincost">ОТ</label>
+              <input type="number" name="mincost" value="0" step="500">
+              <label for="maxcost">ДО</label>
+              <input type="number" name="maxcost" value="15000" step="500">
+     </fieldset>
+     <fieldset>
+         <legend>Сетка</legend>
+        <Ul> 
+            <li>
+                <input type="radio" name="Grid" value="Адаптивная" id="responsive" checked>
+                <label for"responsive">Адаптивная</label>
+            </li>
+            <li>
+                <input type="radio" name="Grid" value="Фиксированная" id="fixed">
+                <label for="fixed">Фиксированная</label> 
+            </li>
+            <li>
+                <input type="radio" name="Grid" value="Резиновая" id="flex">
+                <label for="flex">Резиновая</label>
+            </li>
+        </Ul>
+     </fieldset>
+     <fieldset>
+         <legend>Особенности</legend>
+        <ul>
+            <li>
+                <input type="checkbox" name="Slider" value="Слайдер" id="Slider" checked>
+                <label  for="slider">Слайдер</label>
+            </li>
+            <li>
+                <input type="checkbox" name="advblock" value="Блок преимуществ" id="advblock">
+                <label for="advblock">Блок преимуществ</label>
+            </li>
+            <li>
+                <input type="checkbox" name="news" value="Новости" id="news" checked>  
+                <label for="news">Новости</label>
+            </li>
+            <li>
+                <input type="checkbox" name="gallery" value="Галерея" id="gallery">
+                <label for="gallery">Галерея </label>
+            </li>
+            <li>
+                <input type="checkbox" name="basket" value="Корзина" id="basket">
+                <label for="basket">Корзина</label>
+            </li>
+        </ul>
+     </fieldset>
+     <button type="submit">Показать</button>
+   </section>
+ 
+   
+
+
+   <section>
+ 
+      <h2>каталог</h2>
+      <p>сортировать:</p>
+        <ul>
+            <li>
+                <a>по цене</a>
+            </li> 
+            <li>
+                <a href="#">по типу</a>
+            </li>
+            <li>
+                <a href="#">по названию</a>
+            </li>
+            <li>
+                <a><img src="#" alt="descending" width="11" height="10"></a>
+            </li>
+            <li>
+              <a href="#"><img src="#" alt="ascending" width="11" height="10"></a>
+            </li>
+        </ul>
+    
+        <ul>
+        
+        <li>
+            <h3>Sedona</h3>
+            <a href="#"><img src="#" width="358" height="578" alt=sedona></a>
+            <div>
+                <img src="#" width="360" height="40" alt="browser">
+                <p>Информационный сайт<br>для туристов</p>
+                <a href="#"><p>9 9000 &#8381;</p></a>
+            </div>
+        </li>   
+        <li>
+            <h3>Pink App</h3>
+            <a href="#"><img src="#" width="358" height="578" alt=pinkapp></a>
+            <div>
+                <img src="#" width="360" height="40" alt="browser">
+                <p>Продуктовый лендинг<br>приложения для IOS и Android</p>
+                <a href="#"><p>9 9000 &#8381;</p></a>
+            </div>
+        </li>   
+        <li>
+            <h3>Barbershop</h3>
+            <a href="#"><img src="#" width="358" height="578" alt=Barbershop></a>
+            <div>
+                <img src="#" width="360" height="40" alt="browser">
+                <p>Сайт салона красоты<br>для мужчин, да.</p>
+                <a href="#"><p>9 9000 &#8381;</p></a>
+            </div>
+        </li>  
+        <li>
+            <h3>Mishka</h3>
+            <a href="#"><img src="#" width="358" height="578" alt=Mishka></a>
+            <div>
+                <img src="#" width="360" height="40" alt="browser">
+                <p>Интернет-Магазин<br>вязаных игрушек</p>
+                <a href="#"><p>9 9000 &#8381;</p></a>
+            </div>
+        </li> 
+        <li>
+            <h3>A Plus</h3>
+            <a href="#"><img src="#" width="358" height="578" alt="A Plus"></a>
+            <div>
+                <img src="#" width="360" height="40" alt="browser">
+                <p>Лендинг курсов повышения<br>квалификации</p>
+                <a href="#"><p>9 9000 &#8381;</p></a>
+            </div>
+        </li>
+        <li>
+            <h3>Кваст</h3>
+            <a href="#"><img src="#" width="358" height="578" alt=Кваст></a>
+            <div>
+                <img src="#" width="360" height="40" alt="browser">
+                <p>Промо-сайт производителя<br>крафтового кваса</p>
+                <a href="#"><p>9 9000 &#8381;</p></a>
+            </div>
+        </li>
+        </ul>
+        <ul>
+      <li>
+          <a>1</a>
+      </li>
+      <li>
+          <a href="#">2</a>
+      </li>
+      <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">следующая</a>
+      </li>
+        </ul>
+    </section>
+    <footer>
+        <section>
+        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8тел.</p>
+        <a href=tel:+7812275-75-75>тел. +7 (812) 275-75-75</a>
+        <p><a href="#">Напишите нам</a></p>
+      </section>
+      
+      <section>
+        <h3>Social network</h3>
+        <ul>
+          <li>
+            <a href="#">VK</a>
+          </li>
+          <li>
+            <a href="#">FB</a>
+          </li>
+          <li>
+            <a href="#">IG</a>
+          </li>
+        </ul>
+      </section>
+      <div>
+        <p>Давайте дружить, это выгодно !</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+      
+      </footer>
+
+
+
+</body>
+</html>
