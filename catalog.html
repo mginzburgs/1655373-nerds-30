@@ -31,16 +31,16 @@
               min="0" max="15000" value="10000"><br>
             </div>
               <label for="mincost">ОТ</label>
-              <input type="number" name="mincost" value="0" step="500">
+              <input type="number" name="mincost" value="0" step="500" id="mincost">
               <label for="maxcost">ДО</label>
-              <input type="number" name="maxcost" value="15000" step="500">
+              <input type="number" name="maxcost" value="15000" step="500" id="maxcost">
      </fieldset>
      <fieldset>
          <legend>Сетка</legend>
         <Ul> 
             <li>
                 <input type="radio" name="Grid" value="Адаптивная" id="responsive" checked>
-                <label for"responsive">Адаптивная</label>
+                <label for="responsive">Адаптивная</label>
             </li>
             <li>
                 <input type="radio" name="Grid" value="Фиксированная" id="fixed">
@@ -56,7 +56,7 @@
          <legend>Особенности</legend>
         <ul>
             <li>
-                <input type="checkbox" name="Slider" value="Слайдер" id="Slider" checked>
+                <input type="checkbox" name="Slider" value="Слайдер" id="slider" checked>
                 <label  for="slider">Слайдер</label>
             </li>
             <li>
@@ -78,6 +78,7 @@
         </ul>
      </fieldset>
      <button type="submit">Показать</button>
+     </form>
    </section>
  
    
