@@ -9,8 +9,8 @@
     --basic-contact-gray :#666666;
     --basic-light-gray: #EEEEEE;
     --basic-white: #FFFFFF;
-  
-
+    --transparent-white: rgba(255,255,255,0.3);
+    
     --mobile-green: #00CA74;
     --mobile-green-hover: #00BC6C;
     --mobile-green-active: #00AA62;
@@ -22,8 +22,6 @@
     --presentation-yellow: #EFC849;
     --presentation-yellow-hover: #EAB534;
     --presentation-yellow-active: #E5A722;
-  
-
 }
 
 /* Global */
@@ -32,7 +30,7 @@ body {
     min-width: 1140px;
     margin: 0;
     padding: 0%;
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -40,7 +38,15 @@ body {
     background-color: var(--basic-white);
 }
 
-
+.partners-list,
+.social-list,
+.info-list,
+.shop-list,
+.site-navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 /* main navigation */
 
 .main-navigation {
@@ -53,37 +59,30 @@ body {
     text-transform: uppercase;
     color: var(--basic-black);
     background-color: transparent;  
-    list-style: none;
 }
-
-
-
 
 /* user navigation */
 
-
 .main-header-logo,
-.site-navigation a,
+.nav-link,
 .cart {
     color: var(--basic-black)
 }
 
-
-.site-navigation a:active:not(.hover),
+.nav-link:active:not(.hover),
 .cart:active:not(.hover) {
     color: var(--basic-black);
     opacity: 0.3;    
 }
 
-.site-navigation a:hover,
+.nav-link:hover,
 .cart:hover {
-    color: var(--basic-coral);
+    color: var(--web-coral);
 }
 
 .main-header-logo:active {
     fill: var(--basic-gray);
 }
-
 
 /*main carousel */
 
@@ -92,21 +91,21 @@ body {
 }
 
 .carousel-heading {
-font-weight: 500;
-font-size: 55px;
-line-height: 55px;
-color: var(--basic-black);
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    color: var(--basic-black);
 }
 
 /* footer */
 
-.contacts-container h2 {
+.contact-heading {
     text-transform: uppercase;
     font-size: 18px;
     line-height: 30px;
 }
 
-.contacts-container p {
+.contacts-address {
     color: var(--basic-contact-gray);
 }
 
@@ -116,88 +115,65 @@ color: var(--basic-black);
     font-style: normal;
 }
 
-.social-list {
-    list-style: none;
-}
-
-.social-list a {
+.button-social {
     color: inherit;
 }
 
-.social-list li {
+.social-item {
     color: var(--basic-white);
     background-color: var(--basic-contact-gray) ;
 }
 
 /* Services */
 
-.shop-list {
-    list-style: none;
-}
-
-.shop-item h3 {
+.shop-item-heading {
     line-height: 30px;
     font-weight: bold;
     font-size: 24px;
+    text-transform: uppercase;
 }
 
 /* info */
 
-.info-list {
-    list-style: none;
-}
-
-.main-info p {
-    color: var(--basic-dark-gray)
-}
-
-.main-info h3 {
+.info-heading {
     font-weight: 500;
     font-size: 45px;
     line-height: 45px;
 }
 
-.main-info h4 {
+.info-list-heading {
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.promo-list span {
+.promo-list-percent {
     font-weight: bold;
     font-size: 45px;
     line-height: 64px;
 }
 
-.promo-list p {
+.promo-list-item {
     line-height: 18px; 
 }
 
 .promo-slogan {
-font-weight: bold;
-font-size: 36px;
-line-height: 36px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
 }
 
 .promo-text {
-color:#444444;
-line-height: 22px;
+    color:var(--basic-promo-gray);
+    line-height: 22px;
 }
-
-/* partners */
-
-.partners-list {
-    list-style: none;
-}
-
 
 /* buttons */
 
-
 .button {
-    text-transform: up;
+    text-transform: uppercase;
 }
 
-.social-list li:hover,
+.social-item:hover,
 .slider-button,
 .button-web{
     color: var(--basic-white);
@@ -210,10 +186,10 @@ line-height: 22px;
     background-color: var(--web-coral-hover);
 }
 
-.social-list li:active:not(.hover),
+.social-item:active:not(.hover),
 .slider-button,
 .button-web:active:not(.hover) {
-    color: rgba(255,255,255,0.3);
+    color: var(--transparent-white);
     background-color: var(--web-coral-active);
 }
 
@@ -228,11 +204,10 @@ line-height: 22px;
 }
 
 .button-presentation:active:not(.hover) {
-    color: rgba(255,255,255,0.3);
+    color: var(--transparent-white);
     background-color: var(--presentation-yellow-active);
 }
   
-
 .button-app{
     color: var(--basic-white);
     background-color: var(--mobile-green);
@@ -244,10 +219,9 @@ line-height: 22px;
 }
 
 .button-app:active:not(.hover) {
-    color: rgba(255,255,255,0.3);
+    color: var(--transparent-white);
     background-color: var(--mobile-green-active);
 }
-
 
 .button-partners {
     opacity: 0.2;
@@ -259,4 +233,3 @@ line-height: 22px;
 .button-partners:active:not(.hover) {
     opacity: 0.1;
 }
-
