@@ -1,0 +1,262 @@
+
+/* variables */
+
+:root {
+    --basic-black: #000000;
+    --basic-dark-gray: #283136;
+    --basic-promo-gray: #444444;
+    --basic-gray: #A6A6A6;
+    --basic-contact-gray :#666666;
+    --basic-light-gray: #EEEEEE;
+    --basic-white: #FFFFFF;
+  
+
+    --mobile-green: #00CA74;
+    --mobile-green-hover: #00BC6C;
+    --mobile-green-active: #00AA62;
+
+    --web-coral: #FB565A;
+    --web-coral-hover: #E74246;
+    --web-coral-active: #D7373B;
+
+    --presentation-yellow: #EFC849;
+    --presentation-yellow-hover: #EAB534;
+    --presentation-yellow-active: #E5A722;
+  
+
+}
+
+/* Global */
+
+body {
+    min-width: 1140px;
+    margin: 0;
+    padding: 0%;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-dark-gray);
+    background-color: var(--basic-white);
+}
+
+
+/* main navigation */
+
+.main-navigation {
+    background-color: var(--basic-light-gray);
+}
+
+.site-navigation {
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+    background-color: transparent;  
+    list-style: none;
+}
+
+
+
+
+/* user navigation */
+
+
+.main-header-logo,
+.site-navigation a,
+.cart {
+    color: var(--basic-black)
+}
+
+
+.site-navigation a:active:not(.hover),
+.cart:active:not(.hover) {
+    color: var(--basic-black);
+    opacity: 0.3;    
+}
+
+.site-navigation a:hover,
+.cart:hover {
+    color: var(--basic-coral);
+}
+
+.main-header-logo:active {
+    fill: var(--basic-gray);
+}
+
+
+/*main carousel */
+
+.main-carousel {
+    background-color: var(--basic-light-gray);
+}
+
+.carousel-heading {
+font-weight: 500;
+font-size: 55px;
+line-height: 55px;
+color: var(--basic-black);
+}
+
+/* footer */
+
+.contacts-container h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.contacts-container p {
+    color: var(--basic-contact-gray);
+}
+
+.contacts-phone {
+    text-decoration: none;
+    color: inherit;
+    font-style: normal;
+}
+
+.social-list {
+    list-style: none;
+}
+
+.social-list a {
+    color: inherit;
+}
+
+.social-list li {
+    color: var(--basic-white);
+    background-color: var(--basic-contact-gray) ;
+}
+
+/* Services */
+
+.shop-list {
+    list-style: none;
+}
+
+.shop-item h3 {
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* info */
+
+.info-list {
+    list-style: none;
+}
+
+.main-info p {
+    color: var(--basic-dark-gray)
+}
+
+.main-info h3 {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.main-info h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.promo-list span {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 64px;
+}
+
+.promo-list p {
+    line-height: 18px; 
+}
+
+.promo-slogan {
+font-weight: bold;
+font-size: 36px;
+line-height: 36px;
+}
+
+.promo-text {
+color:#444444;
+line-height: 22px;
+}
+
+/* partners */
+
+.partners-list {
+    list-style: none;
+}
+
+
+/* buttons */
+
+
+.button {
+    text-transform: up;
+}
+
+.social-list li:hover,
+.slider-button,
+.button-web{
+    color: var(--basic-white);
+    background-color: var(--web-coral);
+}
+
+.slider-button,
+.button-web:hover {
+    color: var(--basic-white);
+    background-color: var(--web-coral-hover);
+}
+
+.social-list li:active:not(.hover),
+.slider-button,
+.button-web:active:not(.hover) {
+    color: rgba(255,255,255,0.3);
+    background-color: var(--web-coral-active);
+}
+
+.button-presentation{
+    color: var(--basic-white);
+    background-color: var(--presentation-yellow);
+}
+
+.button-presentation:hover {
+    color: var(--basic-white);
+    background-color: var(--presentation-yellow-hover);
+}
+
+.button-presentation:active:not(.hover) {
+    color: rgba(255,255,255,0.3);
+    background-color: var(--presentation-yellow-active);
+}
+  
+
+.button-app{
+    color: var(--basic-white);
+    background-color: var(--mobile-green);
+}
+
+.button-app:hover {
+    color: var(--basic-white);
+    background-color: var(--mobile-green-hover);
+}
+
+.button-app:active:not(.hover) {
+    color: rgba(255,255,255,0.3);
+    background-color: var(--mobile-green-active);
+}
+
+
+.button-partners {
+    opacity: 0.2;
+}
+.button-partners:hover {
+    opacity: 1;
+   
+}
+.button-partners:active:not(.hover) {
+    opacity: 0.1;
+}
+
