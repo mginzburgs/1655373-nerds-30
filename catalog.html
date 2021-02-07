@@ -11,23 +11,32 @@
         <link rel="icon" href="favicon/favicon152.svg" type="image/svg">
         <link rel="apple-touch-icon" href="favicon/apple-touch-icon-180.png">
       </head>
-<body class="page-body">
+<body>
+  <div class="infinite-background">
     <header class="main-header">
-        <nav class="main-navigation">
-          <a class="main-header-logo" href="index.html">
-            <img src="img/logo/nerdslogo.svg" width="160" height="66" alt="Логотип Нердс">
-          </a>
-          <ul class="site-navigation">
-            <li><a class="nav-link" href="blank.html">Студия</a></li>
-            <li><a class="nav-link" href="blank.html">Клиенты</a></li>
-            <li><a class="nav-link nav-link-selected" href="catalog.html">Магазин</a></li>
-            <li><a class="nav-link" href="blank.html">Контакты</a></li>
-          </ul>
-          <a class="cart" href="blank.html">Корзина</a>
-        </nav>
-      </header>
-          <h1 class="inner-header">Магазин готовых шаблонов</h1>
-   <section>
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/logo/nerdslogo.svg" width="160" height="66" alt="Логотип Нердс">
+      </a>
+      <div class="site-navigation-wrapper">
+      <ul class="site-navigation">
+        <li><a class="nav-link" href="blank.html">Студия</a></li>
+        <li><a class="nav-link" href="blank.html">Клиенты</a></li>
+        <li><a class="nav-link" href="catalog.html">Магазин</a></li>
+        <li><a class="nav-link" href="blank.html">Контакты</a></li>
+      </ul>
+    </div>
+      <a class="cart" href="blank.html">Корзина</a>
+    </nav>
+  </header>
+</div>
+<div class="infinite-background">
+  <div class="inner-header-wrapper">
+    <h1 class="inner-header">Магазин готовых шаблонов</h1>
+  </div>
+  </div>
+   <div class="inner-wrapper">
+   <section class="filter-grid">
      <h2 class="invisible-text">Фильтр товаров</h2>  
      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="GET">   
      <fieldset>
@@ -88,6 +97,7 @@
    </section>
    <section class="inner-catalog">
       <h2 class="invisible-text">каталог</h2>
+      <div class="sort-wrapper">
       <p class="sort-heading">сортировать:</p>
         <ul class="sort-controls-list">
             <li class="sort-item">
@@ -100,12 +110,13 @@
                 <a class="sort-link" href="#">по названию</a>
             </li>
             <li class="sort-item">
-                <a class="sort-link" href="#"><img src="#" alt="descending" width="11" height="10"></a>
+                <a class="sort-link" href="#"><img src="#" alt="down" width="11" height="10"></a>
             </li>
             <li class="sort-item">
-                <a class="sort-link" href="#"><img src="#" alt="ascending" width="11" height="10"></a>
+                <a class="sort-link" href="#"><img src="#" alt="up" width="11" height="10"></a>
             </li>
         </ul>
+      </div>
         <ul class="catalog-list">
             <li class="catalog-item">
             <article class="catalog-product">
@@ -189,35 +200,35 @@
         </li>
         </ul>
     </section>
-    <footer class="main-footer">
-        <section class="contacts-container">
-        <h2 class="contacts-heading">NЁRDS DESIGN STUDIO</h2>
-        <p class="contacts-info"><address class="contacts-adress"> 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8тел.
-        <a class="contacts-phone" href=tel:+7812275-75-75>тел. +7 (812) 275-75-75</a></address>
-        <p><a class="button button-web" href="#">Напишите нам</a></p>
-        <img src="img/elements/map-1.png" width="1440" height="416" alt="карта">
-        <img class="map-pin" src="img/elements/map-marker-1.svg" width="231" height="190" alt="метка на карте">
-      </section>
-      <section class="social-contacts">
-        <h3>Social network</h3>
-        <ul class="social-list">
-          <li class="social-item">
-            <a class="button button-social" href="#">VK<img src="img/elements/vk-icon.svg" width="81" height="81" alt=""></a>
-          </li>
-          <li class="social-item">
-            <a class="button button-social" href="#">FB<img src="img/elements/fb-icon.svg" width="81" height="81" alt=""></a>
-          </li>
-          <li class="social-item">
-            <a class="button button-social" href="#">IG<img src="img/elements/insta-icon.svg" width="81" height="81" alt=""></a>
-          </li>
-        </ul>
-      </section>
-      <div class="footer-promo">
-        <p class="promo-slogan">Давайте дружить, это выгодно!</p>
-        <p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
-      </div>
-      </footer>
-      </body>
-    </html>
+   </div>
+   <footer class="main-footer">
+    <section class="contacts-container">
+    <h2 class="contacts-heading">NЁRDS DESIGN STUDIO</h2>
+    <p class="contacts-info"><address class="contacts-adress"> 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8тел.
+    <a class="contacts-phone" href=tel:+7812275-75-75>тел. +7 (812) 275-75-75</a></address>
+    <p><a class="button button-web" href="#">Напишите нам</a></p>
+    <img class="map-pin" src="img/elements/map-marker-1.svg" width="231" height="190" alt="метка на карте">
+  </section>
+  <section class="social-contacts">
+    <h3 class="invisible-text">Social network</h3>
+    <ul class="social-list">
+      <li class="social-item">
+        <a class="button button-social" href="#"><img src="img/elements/vk-icon.svg" width="81" height="81" alt="VK"></a>
+      </li>
+      <li class="social-item">
+        <a class="button button-social" href="#"><img src="img/elements/fb-icon.svg" width="81" height="81" alt="FB"></a>
+      </li>
+      <li class="social-item">
+        <a class="button button-social" href="#"><img src="img/elements/insta-icon.svg" width="81" height="81" alt="IG"></a>
+      </li>
+    </ul>
+  </section>
+  <div class="footer-promo">
+    <p class="promo-slogan">Давайте дружить, это выгодно!</p>
+    <p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
+  </div>
+  </footer>
+  </body>
+</html>
 
 
