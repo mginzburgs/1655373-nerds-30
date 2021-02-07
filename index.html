@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
@@ -17,12 +17,14 @@
       <a class="main-header-logo" href="index.html">
         <img src="img/logo/nerdslogo.svg" width="160" height="66" alt="Логотип Нердс">
       </a>
+      <div = class="site-navigation-wrapper">
       <ul class="site-navigation">
         <li><a class="nav-link" href="blank.html">Студия</a></li>
         <li><a class="nav-link" href="blank.html">Клиенты</a></li>
         <li><a class="nav-link" href="catalog.html">Магазин</a></li>
         <li><a class="nav-link" href="blank.html">Контакты</a></li>
       </ul>
+    </div>
       <a class="cart" href="blank.html">Корзина</a>
     </nav>
   </header>
@@ -31,11 +33,13 @@
       Интернет магазин "Nerds"
     </h1>
     <section class="main-carousel">
+    <div class="carousel-wrapper">
       <h2 class="invisible-text">Карусель</h2>
       <h3 class="carousel-heading">Долго, дорого,<br>  скрупулезно.</h3>
       <p>Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
-      <img class="slider-picture" src="img/pic/nerds-index-slide1-1.png" width="760" height="431" alt="Мобильные устройства">
       <a class="button slider-button" href="blank.html">Узнать Больше</a>
+    </div>
+      <img class="slider-picture" src="img/pic/nerds-index-slide1-1.png" width="760" height="431" alt="Мобильные устройства">
     </section>
     <section class="main-container">
       <h2 class="invisible-text">УСЛУГИ</h2>
@@ -61,6 +65,7 @@
       </ul>
     </section>
     <section class="main-info" >
+    <div class="info-wrapper">
       <h3 class="info-heading">Мы — маленькая, но гордая<br>дизайн-студия из Краснодара.</h3>
       <p> Исповедуем принципы минимализма и чистоты. Ставим математически расчет<br>превыше креатива. Работаем не покладая рук, как роботы.</p>
       <h4 class="info-list-heading">Выполняем заказы на разработку:</h4>
@@ -75,6 +80,8 @@
           <p class="info-list-item">Слайдшоу и видео для корпоративных презентаций</p>
         </li>
       </ul>
+    </div>
+    <div class="promo-wrapper">
       <img src="img/logo/nerds-illustration-1.jpg" height="208" width="360" alt="красочный логотип студии Нердс">
       <h4>С 2004 Года любим точность во всем:</h4>
       <ul class="promo-list">
@@ -82,20 +89,21 @@
         <li class="promo-list-item"><span class="promo-list-percent">100%</span><br>Соблюдение сроков</li>
         <li class="promo-list-item"><span class="promo-list-percent">50%</span><br>Минимальная предоплата</li>
       </ul>
+    </div>
     </section>
     <section class="partners-container">
       <h2 class="invisible-text">Партнеры</h2>
       <ul class="partners-list">
-        <li>
+        <li class="partner-logo">
           <a class="button button-partners" href="https://htmlacademy.ru/study"><img src="img/logo/partners/logo-1-1.png"  width="199" height="68" alt="логотип htmlacademy"> </a>
         </li>
-        <li>
+        <li class="partner-logo">
           <a class="button button-partners"><img src="img/logo/partners/logo-2-1.png" width="209" height="90" alt="логотип Borodinski" ></a>
         </li>
-        <li>
+        <li class="partner-logo">
           <a class="button button-partners"><img src="img/logo/partners/logo-3-1.png" width="185" height="52" alt="логотип Pink"></a>
         </li>
-        <li>
+        <li class="partner-logo">
           <a class="button button-partners"><img src="img/logo/partners/logo-4-1.png" width="173" height="84" alt="логотип Mishka"></a>
         </li>        
       </ul>
@@ -107,20 +115,20 @@
     <p class="contacts-info"><address class="contacts-adress"> 191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8тел.
     <a class="contacts-phone" href=tel:+7812275-75-75>тел. +7 (812) 275-75-75</a></address>
     <p><a class="button button-web" href="#">Напишите нам</a></p>
-    <img src="img/elements/map-1.png" width="1440" height="416" alt="карта">
+    
     <img class="map-pin" src="img/elements/map-marker-1.svg" width="231" height="190" alt="метка на карте">
   </section>
   <section class="social-contacts">
-    <h3>Social network</h3>
+    <h3 class="invisible-text">Social network</h3>
     <ul class="social-list">
       <li class="social-item">
-        <a class="button button-social" href="#">VK<img src="img/elements/vk-icon.svg" width="81" height="81" alt=""></a>
+        <a class="button button-social" href="#"><img src="img/elements/vk-icon.svg" width="81" height="81" alt="VK"></a>
       </li>
       <li class="social-item">
-        <a class="button button-social" href="#">FB<img src="img/elements/fb-icon.svg" width="81" height="81" alt=""></a>
+        <a class="button button-social" href="#"><img src="img/elements/fb-icon.svg" width="81" height="81" alt="FB"></a>
       </li>
       <li class="social-item">
-        <a class="button button-social" href="#">IG<img src="img/elements/insta-icon.svg" width="81" height="81" alt=""></a>
+        <a class="button button-social" href="#"><img src="img/elements/insta-icon.svg" width="81" height="81" alt="IG"></a>
       </li>
     </ul>
   </section>

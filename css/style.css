@@ -29,8 +29,12 @@
 
 /* Global */
 
-body {
-    min-width: 1140px;
+.page {
+    height: 100%;
+}
+
+.page-body {
+    min-width: 1157px;
     margin: 0;
     padding: 0%;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -39,8 +43,15 @@ body {
     font-weight: 400;
     color: var(--basic-dark-gray);
     background-color: var(--basic-white);
+    
+    display: grid;
+    min-height: 100%;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+
 }
 
+.promo-list,
 .page-number-list,
 .catalog-list,
 .sort-controls-list,
@@ -51,12 +62,13 @@ body {
 .site-navigation {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0px;
 }
 /* main navigation */
 
 .main-navigation {
     background-color: var(--basic-light-gray);
+
 }
 
 .site-navigation {
@@ -64,7 +76,7 @@ body {
     line-height: 30px;
     text-transform: uppercase;
     color: var(--basic-black);
-    background-color: transparent;  
+    background-color: transparent;
 }
 
 /* user navigation */
@@ -73,6 +85,7 @@ body {
 .nav-link,
 .cart {
     color: var(--basic-black)
+
 }
 
 .nav-link:active:not(.hover),
@@ -92,6 +105,7 @@ body {
 
 /*main carousel */
 
+
 .main-carousel {
     background-color: var(--basic-light-gray);
 }
@@ -101,6 +115,8 @@ body {
     font-size: 55px;
     line-height: 55px;
     color: var(--basic-black);
+    margin: 0px;
+    padding: 0;
 }
 
 /* footer */
@@ -184,6 +200,7 @@ body {
     line-height: 18px;
     text-decoration: none;
     text-align: center;
+    max-height: 50px;
 }
 
 .button-price,
@@ -333,3 +350,88 @@ body {
     opacity: 0.3;
 }
 
+
+
+
+/* outline */
+
+/* Grid */
+
+.invisible-text {
+    display: none;
+}
+
+
+.main-navigation {
+    display: grid;
+    grid-template-columns: min-content 1fr max-content;
+    margin-bottom: 9px;
+}
+
+.main-carousel {
+    display: grid;
+    max-height: 431px;
+    max-width:760 px;
+    grid-template-columns: auto auto;
+
+}
+
+.cart {
+    justify-self: right;
+}
+
+.shop-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+}
+
+.promo-wrapper {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.promo-list {
+    display: flex;
+}
+
+.partners-list {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 80px;
+    
+}
+
+.partner-logo {
+    justify-self: center;
+    margin: 0;
+}
+
+.main-footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.social-contacts {
+    order: 2;
+}
+
+.social-list {
+    display: flex;
+}
+
+.contacts-container {
+    grid-column: 1/-1;
+    background-image: url(../img/elements/map-1.png);
+    background-size: cover;
+    height: 416px;
+}
+
+.footer-promo {
+    order: 3;
+}
