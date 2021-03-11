@@ -39,55 +39,64 @@
    <section class="filter-wrapper">
      <h2 class="invisible-text">Фильтр товаров</h2>  
      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="GET">   
-     <fieldset>
+      <fieldset class="filter-item">
          <legend class="filter-heading">Стоимость:</legend>
             <div class="filter-cost">
-             <input class="filter-slider" type="range" id="cost"
-              min="0" max="15000" value="10000"><br>
-            </div>
-              <label class="filter-slider-text" for="mincost">От</label>
-              <input class="filter-mincost" type="number" name="mincost" value="0" step="500" id="mincost">
+              <div class="filter-controls">
+              <div class="scale">
+              <div class="bar" style="width: 70%;
+                                      margin-left: 0%;">
+              </div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0" style="left:10%"></div>
+              <div class="toggle toggle-max" tabindex="0" style="left: 65%;"></div>
+              </div>
+              <div class="price-controls">
+              <label class="filter-slider-text " for="mincost">От</label>
+              <input class="filter-mincost filter-input" type="number" name="mincost" value="0" step="500" id="mincost">
               <label class="filter-slider-text" for="maxcost">До</label>
-              <input class="filter-maxcost" type="number" name="maxcost" value="15000" step="500" id="maxcost">
+              <input class="filter-maxcost filter-input" type="number" name="maxcost" value="15000" step="500" id="maxcost">
+              </div>
+              </div>
      </fieldset>
-     <fieldset>
+     <fieldset class="filter-item">
          <legend class="filter-heading">Сетка</legend>
         <ul class="filter-radio-list"> 
             <li class="filter-list-item">
-                <input type="radio" name="Grid" value="Адаптивная" id="responsive" checked>
+                <input class="visually-hidden filter-input-radio" type="radio" name="Grid" value="Адаптивная" id="responsive" checked>
                 <label for="responsive">Адаптивная</label>
             </li>
             <li class="filter-list-item">
-                <input type="radio" name="Grid" value="Фиксированная" id="fixed">
+                <input class="visually-hidden filter-input-radio" type="radio" name="Grid" value="Фиксированная" id="fixed">
                 <label for="fixed">Фиксированная</label> 
             </li>
             <li class="filter-list-item">
-                <input type="radio" name="Grid" value="Резиновая" id="flex">
+                <input class="visually-hidden filter-input-radio" type="radio" name="Grid" value="Резиновая" id="flex">
                 <label for="flex">Резиновая</label>
             </li>
         </ul>
      </fieldset>
-     <fieldset>
+     <fieldset class="filter-item">
          <legend class="filter-heading">Особенности</legend>
         <ul class="filter-checkbox-list">
             <li class="filter-checkbox-item">
-                <input type="checkbox" name="Slider" value="Слайдер" id="slider" checked>
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="Slider" value="Слайдер" id="slider" checked>
                 <label  for="slider">Слайдер</label>
             </li>
-            <li>
-                <input type="checkbox" name="advblock" value="Блок преимуществ" id="advblock">
+            <li class="filter-checkbox-item">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="advblock" value="Блок преимуществ" id="advblock">
                 <label for="advblock">Блок преимуществ</label>
             </li>
             <li class="filter-checkbox-item">
-                <input type="checkbox" name="news" value="Новости" id="news" checked>  
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news" value="Новости" id="news" checked>  
                 <label for="news">Новости</label>
             </li>
             <li class="filter-checkbox-item">
-                <input type="checkbox" name="gallery" value="Галерея" id="gallery">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="gallery" value="Галерея" id="gallery">
                 <label for="gallery">Галерея </label>
             </li>
             <li class="filter-checkbox-item">
-                <input type="checkbox" name="basket" value="Корзина" id="basket">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="basket" value="Корзина" id="basket">
                 <label for="basket">Корзина</label>
             </li>
         </ul>
@@ -229,6 +238,28 @@
     <p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
   </div>
   </footer>
+
+  <section class="modal">
+    <div class="contact-form-window">
+    <h1 class="form-header">Напишите нам</h1>
+    <form class="form-email" action="https://echo.htmlacademy.ru/" method="post">
+      <p class="email-item">
+        <label for="email-name">Ваше имя:</label>
+        <input class="creditnails" id="email-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="email-item">
+        <label for="email-adress">Ваш email:</label>
+        <input class="creditnails" id="email-adress" type="text" name="email" placeholder="email@expamle.com">
+      </p>
+      <p class="email-item mail-text-item">
+        <label for="email-text">Текст письма:</label></br>
+        <textarea class="email-box" id="email-text" type="text" name="email-text" placeholder="В свободной форме"></textarea>
+      </p>
+      <input class="button send-button" type="submit"  value="Отправить">
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </div>
+    </section>
 
   <svg display="none">
     <symbol id="ascending" viewbox="0 0 11 10"> 
